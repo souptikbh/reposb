@@ -1,0 +1,34 @@
+This is a test file
+
+1) cd /d/Git_Repo
+2) $ git clone https://github.com/souptikbh/myrepo.git ===> This clones repository from Githum into local system
+3) $ git status============================> After placing the file run this command. This will show the new file coloured in RED.
+4)$ git add Jenkins_Credentials.txt ==============> Run this command to push the file into STAGING area. Now the colour of the file will be GREEN
+5)$ git commit -m "1st Test file"======> This commits the file and now ready to be pushed into Github repository
+
+**) $ git branch=============>This shows the current branch
+
+6)
+  (i)$ git remote add origin https://github.com/souptikbh/myrepo.git
+     OR --------$ git remote add origin git@github.com:souptikbh/myrepo.git 
+  (ii) $ git push -u origin master
+  (iii) $ git remote rm origin
+
+
+
+
+
+
+
+
+
+A) $ ssh-keygen -t ed25519 -C "souptikbh@gmail.com"==============> This will generate SSH key for my laptop
+B) $ eval "$(ssh-agent -s)"============>Agent pid 1406
+C) $ ssh-add ~/.ssh/id_ed25519===========>Identity added: /c/Users/soupt/.ssh/id_ed25519 (souptikbh@gmail.com)
+D) Add the contents in id_ed25519.pub at SSH key in Github
+E) $ ssh -T git@github.com====>The authenticity of host 'github.com (13.234.210.38)' can't be established.
+                                 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+					   This key is not known by any other names
+					   Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+					   Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+                                 Hi souptikbh! You've successfully authenticated, but GitHub does not provide shell access.
